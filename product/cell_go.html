@@ -426,7 +426,7 @@
         const holder = document.querySelector('[data-color]');
         const hc = hex => hex.slice(2) + hex.slice(0, 2);
         let c = '';
-        "#ffffff".split(',').forEach((x,i)=>{
+        "ffffffff,FF806B95".split(',').forEach((x,i)=>{
           c+=`<span onclick="selectColor(this)" style="background: #${hc(x)};" class="sc flex justify-center items-center w-10 h-10 relative rounded-full bg-black border-2 border-gray-300 focus:outline-none transition-all duration-200 hover:border-blue-500"><input type="radio" hidden data-color checked value="#${hc(x)}" name="color"></span>`;
         })
         holder.innerHTML = c;
